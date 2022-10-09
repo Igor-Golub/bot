@@ -22,7 +22,7 @@ module.exports = {
   },
 
   stickers: {
-    welcome: 'https://tlgrm.ru/_/stickers/ea5/382/ea53826d-c192-376a-b766-e5abc535f1c9/7.jpg',
-    guessed: 'https://tlgrm.ru/_/stickers/ccd/a8d/ccda8d5d-d492-4393-8bb7-e33f77c24907/1.jpg'
+    welcome: 'https://cdn.tlgrm.app/stickers/8e8/b67/8e8b67f5-c211-4163-813e-5e210c2b0f46/192/3.webp',
+    guessed: 'https://tlgrm.ru/_/stickers/8e8/b67/8e8b67f5-c211-4163-813e-5e210c2b0f46/192/16.webp'
   }
 }

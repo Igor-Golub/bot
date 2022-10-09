@@ -16,7 +16,7 @@ const startGame = async (chatId) => {
 
 const start = async () => {
   await bot.setMyCommands([
-    {command: commands.start, description: 'Начатьное приветствие'},
+    {command: commands.start, description: 'Привет'},
     {command: commands.game, description: 'Игра - отгадай число'}
   ])
 
@@ -26,7 +26,10 @@ const start = async () => {
 
     if (text === commands.start) {
       await bot.sendSticker(chatId, stickers.welcome)
-      return bot.sendMessage(chatId, messages.welcome({ firstName: first_name, lastName: last_name }))
+      return bot.sendMessage(chatId, messages.welcome({
+        firstName: first_name || '',
+        lastName: last_name || '',
+      }))
     }
 
     if (text === commands.game) {
